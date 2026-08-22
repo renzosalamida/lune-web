@@ -1,0 +1,1124 @@
+/* =========================
+ESTILOS GENERALES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0e3d3d;
+    color: #e7dfd0;
+    font-family: "Manrope", sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* =========================
+HEADER - CELULAR
+========================= */
+
+.header {
+    min-height: 105px;
+    padding: 14px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0e3d3d;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e7dfd0;
+    line-height: 1;
+}
+
+.logo-luna {
+    margin-bottom: -4px;
+    font-size: 20px;
+}
+
+.logo-nombre {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 0.85;
+}
+
+.logo-descripcion {
+    margin-top: 8px;
+    font-size: 7px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.boton-header {
+    padding: 11px 19px;
+    background-color: #e7dfd0;
+    color: #0e3d3d;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* =========================
+HERO - CELULAR
+========================= */
+
+.hero {
+    min-height: calc(100vh - 105px);
+    padding: 50px 6% 65px;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    overflow: hidden;
+}
+
+.hero-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-etiqueta {
+    margin-bottom: 18px;
+    color: #b8b8b8;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    max-width: 500px;
+    color: #e7dfd0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 47px;
+    font-weight: 500;
+    line-height: 0.95;
+}
+
+.hero-descripcion {
+    max-width: 460px;
+    margin-top: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #e7dfd0;
+}
+
+.boton-principal {
+    margin-top: 30px;
+    padding: 14px 24px;
+    background-color: #e7dfd0;
+    color: #0e3d3d;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.hero-imagen {
+    width: 100%;
+    min-height: 330px;
+    overflow: hidden;
+    background-color: #b8b8b8;
+    border-radius: 160px 160px 24px 24px;
+}
+
+.hero-imagen img {
+    width: 100%;
+    height: 100%;
+    min-height: 330px;
+    object-fit: cover;
+}
+
+/* =========================
+PRODUCTOS - CELULAR
+========================= */
+
+.productos {
+    padding: 85px 6%;
+    background-color: #e7dfd0;
+    color: #0e3d3d;
+}
+
+.productos-encabezado {
+    margin-bottom: 45px;
+}
+
+.productos .seccion-etiqueta {
+    margin-bottom: 16px;
+    color: #3a3a3a;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.productos h2 {
+    max-width: 500px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.productos .seccion-descripcion {
+    max-width: 480px;
+    margin-top: 20px;
+    color: #3a3a3a;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.producto-card {
+    overflow: hidden;
+    background-color: #f3eee4;
+    color: #3a3a3a;
+    border: 1px solid rgba(14, 61, 61, 0.12);
+    border-radius: 24px;
+}
+
+.producto-imagen {
+    position: relative;
+    min-height: 250px;
+    overflow: hidden;
+    background-color: #b8b8b8;
+}
+
+.producto-imagen img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.producto-card:hover .producto-imagen img {
+    transform: scale(1.04);
+}
+
+
+.producto-imagen span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e3d3d;
+    color: #e7dfd0;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.producto-contenido {
+    padding: 26px 24px 30px;
+}
+
+.producto-tipo {
+    margin-bottom: 8px;
+    color: #0e3d3d;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.producto-contenido h3 {
+    color: #0e3d3d;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 31px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.producto-contenido > p:last-child {
+    margin-top: 13px;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* =========================
+BEBIDAS - CELULAR
+========================= */
+
+.bebidas {
+    padding: 85px 6%;
+
+    background-color: #0e3d3d;
+    color: #e7dfd0;
+}
+
+.bebidas-encabezado {
+    max-width: 520px;
+    margin-bottom: 45px;
+}
+
+.bebidas .seccion-etiqueta {
+    margin-bottom: 16px;
+    color: #b8b8b8;
+}
+
+.bebidas-encabezado h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.bebidas-encabezado > p:last-child {
+    margin-top: 20px;
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.bebidas-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.bebida-card {
+    overflow: hidden;
+    background-color: #e7dfd0;
+    color: #3a3a3a;
+    border-radius: 24px;
+}
+
+.bebida-imagen {
+    min-height: 270px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: #b8b8b8;
+}
+
+.bebida-imagen span {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e3d3d;
+    color: #e7dfd0;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.bebida-contenido {
+    padding: 26px 24px 30px;
+}
+
+.bebida-contenido h3 {
+    color: #0e3d3d;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.bebida-contenido p {
+    margin-top: 14px;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.bebidas-accion {
+    margin-top: 36px;
+}
+
+.boton-bebidas {
+    width: 100%;
+    padding: 14px 24px;
+    display: inline-block;
+    background-color: #e7dfd0;
+    color: #0e3d3d;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* =========================
+NUESTRA PROPUESTA - CELULAR
+========================= */
+
+.nosotros {
+    padding: 80px 6% 90px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    background-color: #e7dfd0;
+    color: #0e3d3d;
+}
+
+.nosotros .seccion-etiqueta {
+    margin-bottom: 16px;
+    color: #3a3a3a;
+}
+
+.nosotros h2 {
+    max-width: 500px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.nosotros-texto > p:not(.seccion-etiqueta) {
+    max-width: 520px;
+    margin-top: 22px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.nosotros-decoracion {
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e3d3d;
+    color: #e7dfd0;
+    border: 1px solid rgba(231, 223, 208, 0.35);
+    border-radius: 160px 160px 24px 24px;
+    text-align: center;
+}
+
+.nosotros-decoracion span {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 75px;
+    line-height: 1;
+}
+
+.nosotros-decoracion p {
+    margin-top: 15px;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+/* =========================
+CÓMO PEDIR - CELULAR
+========================= */
+
+.pedidos {
+    padding: 85px 6%;
+    background-color: #0e3d3d;
+    color: #e7dfd0;
+}
+
+.pedidos-encabezado {
+    margin-bottom: 45px;
+}
+
+.pedidos .seccion-etiqueta {
+    margin-bottom: 16px;
+    color: #b8b8b8;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.pedidos-encabezado h2 {
+    max-width: 500px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.pedidos-encabezado > p:last-child {
+    max-width: 500px;
+    margin-top: 20px;
+    color: #e7dfd0;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.pedidos-pasos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.paso {
+    padding: 28px 24px;
+    background-color: #e7dfd0;
+    color: #0e3d3d;
+    border-radius: 22px;
+}
+
+.paso-numero {
+    margin-bottom: 32px;
+    color: #0e3d3d;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.paso h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.paso > p:last-child {
+    margin-top: 13px;
+    color: #3a3a3a;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.pedidos-accion {
+    margin-top: 35px;
+}
+
+.boton-pedidos {
+    width: 100%;
+    padding: 14px 24px;
+    display: inline-block;
+    background-color: #e7dfd0;
+    color: #0e3d3d;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* =========================
+CONTACTO - CELULAR
+========================= */
+
+.contacto {
+    padding: 90px 6%;
+    background-color: #b8b8b8;
+    color: #0e3d3d;
+    text-align: center;
+}
+
+.contacto-contenido {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contacto .seccion-etiqueta {
+    margin-bottom: 16px;
+    color: #3a3a3a;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.contacto h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.contacto-contenido > p:not(.seccion-etiqueta) {
+    margin: 20px auto 30px;
+    color: #3a3a3a;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.boton-contacto {
+    padding: 14px 24px;
+    display: inline-block;
+    background-color: #0e3d3d;
+    color: #e7dfd0;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* =========================
+FOOTER - CELULAR
+========================= */
+
+.footer {
+    padding: 55px 6%;
+    background-color: #0e3d3d;
+    color: #e7dfd0;
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+}
+
+.footer-luna {
+    margin-bottom: -3px;
+    font-size: 18px;
+}
+
+.footer-nombre {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.footer > p {
+    margin-top: 12px;
+    font-size: 10px;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.footer > p:last-child {
+    color: #b8b8b8;
+}
+
+/* BOTONES DE PEDIDO */
+
+.boton-header,
+.boton-bebidas,
+.boton-pedidos {
+    background-color: #b8b8b8;
+    color: #3a3a3a;
+}
+
+.nav {
+    display: none;
+}
+
+.bebidas-imagen-grupal {
+    width: 100%;
+    margin-bottom: 28px;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.bebidas-imagen-grupal img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.bebida-card {
+    padding: 28px 24px;
+}
+
+
+/* =========================
+TABLET - DESDE 600 PX
+========================= */
+
+@media (min-width: 600px) {
+
+    .header {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .logo-nombre {
+        font-size: 52px;
+    }
+
+    .boton-header {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 70px 7% 85px;
+        gap: 55px;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .hero-descripcion {
+        font-size: 16px;
+    }
+
+    .boton-principal {
+        padding: 15px 27px;
+        font-size: 14px;
+    }
+
+    .hero-imagen {
+        max-width: 520px;
+        min-height: 430px;
+        margin: 0 auto;
+    }
+
+    .hero-imagen img {
+        min-height: 430px;
+    }
+
+
+    /* PRODUCTOS */
+
+    .productos {
+        padding: 100px 7%;
+    }
+
+    .productos h2 {
+        font-size: 54px;
+    }
+
+    .productos .seccion-descripcion {
+        font-size: 16px;
+    }
+
+    .productos-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .producto-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .producto-imagen {
+        width: 100%;
+        height: 280px;
+        min-height: 0;
+    }
+
+    .producto-imagen img {
+        height: 100%;
+    }
+
+    .producto-contenido {
+        flex-grow: 1;
+    }
+
+
+    /* BEBIDAS */
+
+    .bebidas {
+        padding: 100px 7%;
+    }
+
+    .bebidas-encabezado h2 {
+        font-size: 56px;
+    }
+
+    .bebidas-encabezado > p:last-child {
+        font-size: 16px;
+    }
+
+    .bebidas-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .bebida-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bebida-card:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .bebida-card:last-child .bebida-imagen {
+        min-height: 320px;
+    }
+
+    .bebidas-accion {
+        text-align: center;
+    }
+
+    .boton-bebidas {
+        width: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .bebidas-imagen-grupal {
+        max-width: 760px;
+        margin: 0 auto 35px;
+    }
+
+    .bebidas-imagen-grupal img {
+        height: 430px;
+    }
+
+    /* NUESTRA PROPUESTA */
+
+    .nosotros {
+        padding: 100px 7%;
+    }
+
+    .nosotros h2 {
+        font-size: 56px;
+    }
+
+    .nosotros-texto > p:not(.seccion-etiqueta) {
+        font-size: 16px;
+    }
+
+    .nosotros-decoracion {
+        min-height: 340px;
+    }
+
+
+    /* CÓMO PEDIR */
+
+    .pedidos {
+        padding: 100px 7%;
+    }
+
+    .pedidos-encabezado h2 {
+        font-size: 56px;
+    }
+
+    .pedidos-encabezado > p:last-child {
+        font-size: 16px;
+    }
+
+    .pedidos-pasos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .paso:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .pedidos-accion {
+        text-align: center;
+    }
+
+    .boton-pedidos {
+        width: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+
+    /* CONTACTO Y FOOTER */
+
+    .contacto {
+        padding: 105px 7%;
+    }
+
+    .contacto h2 {
+        font-size: 64px;
+    }
+
+    .contacto-contenido > p:not(.seccion-etiqueta) {
+        font-size: 16px;
+    }
+
+    .footer {
+        padding: 65px 7%;
+    }
+
+    .footer-nombre {
+        font-size: 50px;
+    }
+}
+
+/* =========================
+ESCRITORIO - DESDE 900 PX
+========================= */
+
+@media (min-width: 900px) {
+
+    /* HEADER */
+
+    .header {
+        min-height: 125px;
+        padding: 12px 6%;
+        gap: 30px;
+    }
+
+    .logo-nombre {
+        font-size: 56px;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .nav a {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .nav a:hover {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+    }
+
+    .boton-header {
+        padding: 13px 24px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: calc(100vh - 125px);
+        padding: 60px 6% 90px;
+
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        align-items: center;
+        gap: 70px;
+    }
+
+    .hero h1 {
+        font-size: clamp(62px, 6vw, 84px);
+    }
+
+    .hero-descripcion {
+        max-width: 520px;
+        font-size: 17px;
+    }
+
+    .hero-imagen {
+        width: 100%;
+        max-width: 620px;
+        min-height: 530px;
+        margin: 0;
+    }
+
+    .hero-imagen img {
+        min-height: 530px;
+    }
+
+
+    /* PRODUCTOS */
+
+    .productos {
+        padding: 115px 6%;
+    }
+
+    .productos-encabezado {
+        max-width: 720px;
+        margin: 0 auto 65px;
+        text-align: center;
+    }
+
+    .productos h2 {
+        font-size: 68px;
+    }
+
+    .productos .seccion-descripcion {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .productos-grid {
+        max-width: 1400px;
+        margin: 0 auto;
+
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 26px;
+    }
+
+    .producto-card {
+        min-height: 480px;
+    }
+
+    .producto-imagen {
+        height: 290px;
+        min-height: 0;
+    }
+
+    .producto-imagen img {
+        height: 100%;
+    }
+
+    .producto-contenido h3 {
+        font-size: 34px;
+    }
+
+
+    /* BEBIDAS */
+
+    .bebidas {
+        padding: 115px 6%;
+    }
+
+    .bebidas-encabezado {
+        max-width: 700px;
+        margin: 0 auto 65px;
+        text-align: center;
+    }
+
+    .bebidas-encabezado h2 {
+        font-size: 68px;
+    }
+
+    .bebidas-grid {
+        max-width: 1400px;
+        margin: 0 auto;
+
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 26px;
+    }
+
+    .bebida-card:last-child {
+        grid-column: auto;
+    }
+
+    .bebida-imagen,
+    .bebida-card:last-child .bebida-imagen {
+        min-height: 310px;
+    }
+
+    .bebida-contenido h3 {
+        font-size: 36px;
+    }
+
+    .bebidas-accion {
+        margin-top: 45px;
+    }
+
+    .bebidas-imagen-grupal {
+        max-width: 1100px;
+        margin-bottom: 45px;
+    }
+
+    .bebidas-imagen-grupal img {
+        height: 520px;
+    }
+
+    /* NUESTRA PROPUESTA */
+
+    .nosotros {
+        padding: 120px 6%;
+
+        grid-template-columns: minmax(0, 1.15fr) minmax(350px, 0.85fr);
+        align-items: center;
+        gap: 90px;
+    }
+
+    .nosotros h2 {
+        font-size: clamp(62px, 6vw, 78px);
+    }
+
+    .nosotros-texto > p:not(.seccion-etiqueta) {
+        font-size: 17px;
+    }
+
+    .nosotros-decoracion {
+        min-height: 430px;
+    }
+
+    .nosotros-decoracion span {
+        font-size: 95px;
+    }
+
+
+    /* CÓMO PEDIR */
+
+    .pedidos {
+        padding: 115px 6%;
+    }
+
+    .pedidos-encabezado {
+        max-width: 720px;
+        margin: 0 auto 65px;
+        text-align: center;
+    }
+
+    .pedidos-encabezado h2 {
+        font-size: 68px;
+    }
+
+    .pedidos-encabezado > p:last-child {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .pedidos-pasos {
+        max-width: 1300px;
+        margin: 0 auto;
+
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .paso,
+    .paso:last-child {
+        grid-column: auto;
+    }
+
+    .paso {
+        min-height: 260px;
+        padding: 34px 30px;
+    }
+
+    .paso h3 {
+        font-size: 38px;
+    }
+
+    .pedidos-accion {
+        margin-top: 45px;
+    }
+
+
+    /* CONTACTO Y FOOTER */
+
+    .contacto {
+        padding: 125px 6%;
+    }
+
+    .contacto h2 {
+        font-size: 76px;
+    }
+
+    .footer {
+        padding: 75px 6%;
+    }
+
+    .footer-nombre {
+        font-size: 58px;
+    }
+}
+
